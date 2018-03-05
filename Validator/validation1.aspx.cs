@@ -22,9 +22,9 @@ namespace Validator
             
            
         }
-        protected void CustomValidator1_ServerValidate(object source, ServerValidateEventArgs args)
+
+        protected void CustomValidator1_ServerValidate1(object source, ServerValidateEventArgs args)
         {
-            
             DateTime datee = DateTime.Parse(args.Value);
             int age = DateTime.Now.Year - datee.Year;
 
