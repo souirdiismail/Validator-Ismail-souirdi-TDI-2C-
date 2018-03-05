@@ -143,7 +143,7 @@
             controltovalidate="cin"
             errormessage="CIN is required.">*
         </asp:RequiredFieldValidator>CIN:</td>
-         <asp:CustomValidator ID="CustomValidator1" runat="server" ErrorMessage="CustomValidator" ControlToValidate="date"  OnServerValidate="CustomValidator1_ServerValidate1"></asp:CustomValidator>
+         <asp:CustomValidator ID="CustomValidator1" runat="server" ErrorMessage="CustomValidator" ControlToValidate="date"  OnServerValidate="CustomValidator1_ServerValidate"></asp:CustomValidator>
     <td>
       <input type="Text" runat="server" id="cin"/>
       <asp:RegularExpressionValidator runat="server" display="Dynamic"

@@ -22,26 +22,24 @@ namespace Validator
             
            
         }
-
-        protected void CustomValidator1_ServerValidate1(object source, ServerValidateEventArgs args)
+        protected void CustomValidator1_ServerValidate(object source, ServerValidateEventArgs args)
         {
-            DateTime datee = DateTime.Parse(args.Value);
-            int age = DateTime.Now.Year - datee.Year;
-
-            if (age > 16)
+            DateTime d = DateTime.Parse(args.Value);
+            int a = DateTime.Now.Year - d.Year;
+            if (a>16)
             {
                 args.IsValid = false;
             }
             else
             {
-
                 args.IsValid = true;
-
             }
-            if (age >= 16 && cin.Type != "")
+            if (a >= 16 && cin.Type != "")
             {
                 args.IsValid = true;
             }
         }
+
+       
     }
 }
